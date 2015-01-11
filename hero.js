@@ -180,7 +180,15 @@ var moves = {
  };
 
 //  Set our heros strategy
-var  move =  moves.aggressor;
+//var  move =  moves.aggressor;
+    var movechoices = [moves.aggressor, moves.aggressor, 
+			moves.healthNut, moves.healthNut, moves.healthNut, moves.healthNut,  
+			moves.priest,moves.priest, 
+			moves.carefulAssassin, moves.carefulAssassin, 
+			moves.safeDiamondMiner,moves.safeDiamondMiner,
+			moves.coward, moves.coward];
+    var move = movechoices[Math.floor(Math.random()*14)];
+
 
 // Export the move function here
 module.exports = move;
